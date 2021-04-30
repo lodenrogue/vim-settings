@@ -18,6 +18,9 @@ set foldlevel=99
 " Open and close folds with space
 nnoremap <space> za
 
+" Toggle NerdTree with control n
+map <C-n> :NERDTreeToggle<CR>
+
 " Uncomment below to start without code folding
 ""set nofoldenable
 
