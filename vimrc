@@ -25,17 +25,23 @@ nnoremap <space> za
 nnoremap ZS :up<CR>
 
 " Toggle NerdTree with control n
-map <C-n> :NERDTreeToggle<CR>
+" map <C-n> :NERDTreeToggle<CR>
 
 " Line numbers
 set number
+
+" Set relative line numbers on
+set relativenumber
 
 " Allow mouse use
 set mouse=a
 
 " Color theme
 set bg=dark
-set termguicolors
+
+" Termguicolors does not work on Mac
+" Enable it for Linux
+" set termguicolors
 
 let g:gruvbox_contrast_dark='hard'
 colorscheme gruvbox
@@ -43,6 +49,7 @@ colorscheme gruvbox
 " Load all plugins now.
 " Plugins need to be added to runtimepath before helptags can be generated.
 packloadall
+
 " Load all of the helptags now, after plugins have been loaded.
 " All messages and errors will be ignored.
 silent! helptags ALL
